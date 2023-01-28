@@ -1,0 +1,772 @@
+@import "normalize.scss"
+@import "resets.scss"
+
+@font-face 
+  font-family: "Quicksand"
+  src: url(../fonts/Quicksand-Regular.ttf)
+@font-face 
+  font-family: "Quicksand300"
+  src: url(../fonts/Quicksand-Light.ttf)
+@font-face 
+  font-family: "Quicksand500"
+  src: url(../fonts/Quicksand-Medium.ttf)
+@font-face
+  font-family: "Quicksand700"
+  src: url(../fonts/Quicksand-SemiBold.ttf)
+@font-face
+  font-family: "Roboto500"
+  src: url(../fonts/Roboto-Medium.ttf)
+@font-face
+  font-family: "Roboto"
+  src: url(../fonts/Roboto.ttf)
+
+a
+  text-decoration: none
+button
+  cursor: pointer
+  border: none
+
+.wrapper
+  max-width: 1440px
+  margin: 0 auto
+
+.header
+  width: 1206px
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: space-between
+  & ul
+    display: flex
+    align-items: center
+
+.head
+  height: 80px
+
+.logo
+  width: 26px
+  height: 26px
+  background-color: #5E81FE
+  border-radius: 13px
+
+.menu
+  & li
+    margin-right: 42px
+    &:last-child
+      margin-right: 0
+    &:first-child
+      margin-right: 73px
+  &__item
+    color:#697CA6
+    font-size: 12px
+    font-family: Quicksand
+    font-weight: 500
+    &:hover
+      color: #5E81FE
+      font-weight: 700
+
+.active
+  color: #5E81FE
+  font-weight: 700
+
+.social
+  align-items: center
+  & li
+    margin-right: 33.5px
+    &:last-child
+      margin-right: 0
+    &:nth-child(4)
+      margin-right: 44px
+  &__item
+    display: inline-block
+    height: 17px
+    width: 16.51px
+    text-align: center
+    cursor: pointer
+    &:hover svg path
+      fill: #5E81FE
+  &__button
+    width: 113px
+    height: 43px
+    background-color: #D2E1FF
+    font-family: Quicksand
+    font-size: 13px
+    font-weight: 900
+    border-radius: 2px
+    border: none
+    color:#3A79FF
+    cursor: pointer
+
+.main
+  min-height: 570px
+  background: url(../img/main_back.png) no-repeat bottom, linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%) 
+  box-sizing: border-box
+  border-top: 1px solid #D8E3FE
+  border-bottom: 1px solid #D8E3FE
+  padding-top: 92px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding-bottom: 28px
+  &__slide__container
+    width: 583px
+    overflow: hidden
+    margin: 0 auto
+  &__slider__wrapper
+    height: 100%
+    transition: 1s all
+    display: flex
+  &__slide
+    text-align: center
+    width: 583px
+    &__p1
+      font-family: Roboto500
+      font-size: 10px
+      color: #3D4F9F
+      margin-bottom: 20px
+    &__title
+      font-family: Quicksand300
+      font-size: 48px
+      color: #3D4F9F
+      margin-bottom: 28px
+      & span
+        font-family: Quicksand500
+    &__p2
+      font-family: Roboto
+      font-size: 15px
+      color: #8D96BD
+      max-width: 502px
+      margin: 0 auto
+      line-height: 28.65px
+      letter-spacing: 0.03em
+      margin-bottom: 20px
+    &__btn
+      width: 52px
+      height: 52px
+      border-radius: 26px
+      border: none
+      background-color: #fff
+      cursor: pointer
+      background: #fff url(../img/btn_triangle.svg) no-repeat center
+
+.dots
+  height: 8px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  &__item
+    width: 8px
+    height: 8px
+    display: inline-block
+    border-radius: 4px
+    cursor: pointer
+    background-color: #D1D6E3
+    margin-right: 12px
+    &:last-child
+      margin-right: 0
+    &--active
+      background-color: #5283FF
+
+.customers
+  min-height: 145px
+  width: 100%
+  display: flex
+  &__list
+    display: inline-flex
+    align-items: center
+    margin: 0 auto
+  &__item
+    margin-right: 76.5px
+    &:last-child
+      margin-right: 0
+      
+.manage
+  min-height: 776px
+  background: #F5F8FF
+  position: relative
+  display: flex
+  border-top: 1px solid #D8E3FE
+  border-bottom: 1px solid #D8E3FE
+  flex-direction: column
+  &__desktop
+    position: absolute
+    width: 539.95px
+    box-sizing: border-box
+    height: 336.62px
+    border-top: 12.38px  solid #fff
+    border-bottom: 7.43px  solid #fff
+    border-right: 15.69px  solid #fff
+    border-left: 15.69px  solid #fff
+    box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15)
+    border-radius: 15px
+    background: url(../img/desktop.jpg) no-repeat
+    top: 170px
+    right: 81.02px
+  &__line
+    position: absolute
+    width: 606px
+    height: 19.8px
+    box-sizing: border-box
+    border-bottom: 19.8px solid #fff
+    border-radius: 0 0 15px 15px
+    box-shadow: 0px 50px 50px rgba(107, 119, 224, 0.05), 0px 50px 150px rgba(104, 113, 198, 0.05), 0px 50px 200px rgba(53, 60, 115, 0.05), 0px 20px 40px rgba(159, 162, 195, 0.15)
+    right: 48px
+    bottom: 259px
+  &__mobile
+    position: absolute
+    width: 107px
+    height: 214px
+    box-sizing: border-box
+    border-top: 11.02px solid #fff
+    border-bottom: 12.39px solid #fff
+    box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15)
+    border-radius: 15px
+    background: url(../img/mobile.jpg) no-repeat
+    top: 270px
+    right: 594px
+  &__pad
+    position: absolute
+    width: 148px
+    height: 280px
+    border-top: 9px solid #fff
+    border-bottom: 15.23px solid #fff
+    box-sizing: border-box
+    border-radius: 15px
+    border-left: 1px solid #fff
+    border-right: 3.27px solid #fff
+    box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15)
+    background: url(../img/pad.jpg) no-repeat
+    bottom: 170px
+    right: 110px
+  &__content
+    margin-top: 208px
+    margin-left: 271px
+    &__p1
+      margin-bottom: 30px
+    &__title
+      font-size: 36px
+      font-family: Quicksand
+      color: #3D4F9F
+      margin-bottom: 29px
+      & span
+        font-family: Quicksand500
+    &__p2
+      max-width: 413px
+      margin: 0
+      margin-bottom: 52px
+  &__btns
+    display: flex
+  &__btn
+    box-sizing: border-box
+    width: 130.08px
+    height: 43px
+    border: 1px solid #D1D1E4
+    background-color: #F5F8FF
+    font-family: Quicksand500
+    font-size: 13px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #ADB4D2
+    &:hover
+      font-family: Quicksand700
+      color: #fff
+      background: #4C85FF
+      box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75)
+      & span
+        width: 6.5px
+        margin-left: 6px
+        height: 7.2px
+        display: block
+        background: url(../img/btn_small_triangle.svg)
+    &:first-child
+      border-right: 0.5px solid #D1D1E4
+      border-radius: 5px 0 0 5px
+    &:last-child
+      border-left: 0.5px solid #D1D1E4
+      border-radius: 0 5px 5px 0
+
+.about
+  min-height: 885px
+  background: url(../img/about_back.png) no-repeat center
+  display: flex
+  justify-content: center
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 171px
+    &__p1
+      margin-bottom: 24px
+    &__title
+      font-family: Quicksand500
+      font-weight: 500
+      font-size: 24px
+      color: #3D4F9F
+      margin-bottom: 92px
+  &__features
+    display: flex
+    align-items: center
+  &__feature
+    margin-bottom: 92px
+  &__line
+    height: 1px
+    box-sizing: border-box
+    border-top: 1px solid #DAE4FE
+    width: 28px
+    margin: 0 20px
+    &--small
+      width: 15px
+      margin: 0 16px
+  &__btns
+    display: flex
+    align-items: center
+  &__btn
+    width: 113px
+    height: 43px
+    border-radius: 2px
+    font-family: Quicksand700
+    font-size: 13px
+    &--read
+      background-color: #FFD7D7
+      color: #D43F3F
+    &--started
+      background-color: #D2E1FF
+      color: #3A79FF
+  &__p
+    color: #ADB3CB
+    font-family: "Open Sans"
+    font-weight: 600
+    font-size: 11px
+
+.feature
+  width: 140px
+  align-items: center
+  text-align: center
+  &__icon
+    width: 69px
+    height: 69px
+    display: inline-block
+    border-radius: 50px
+    margin-bottom: 33px
+    &--overview
+      background: #F1F5FF url(../img/feature_overview.svg) no-repeat center
+    &--files
+      background: #F1F5FF url(../img/feature_files.svg) no-repeat center
+    &--meeting
+      background: #F1F5FF url(../img/feature_meeting.svg) no-repeat center
+    &--save
+      background: #F1F5FF url(../img/feature_save.svg) no-repeat center
+  &__title
+    color: #4074F8
+    font-family: "Open Sans"
+    font-weight: 700
+    margin-bottom: 34px
+    font-size: 14px
+  &__p
+    font-family: "Open Sans"
+    font-size: 11px
+    font-weight: 600
+    color: #ADB3CB
+    line-height: 19px
+    min-height: 102px
+
+.stat
+  display: flex
+  &__container
+    width: 50%
+    min-height: 342px
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__icon
+    margin-bottom: 28px
+  &__title
+    font-family: Quicksand
+    font-size: 48px
+    margin-bottom: 20px
+  &__descr
+    font-family: Quicksand500
+    font-size: 18px
+    max-width: 260px
+    margin: 0
+    
+.users
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%)
+  color: #5E80FF
+  padding-left: 90px
+  &__icon
+    background: url(../img/stat_users.png) no-repeat center
+    width: 75px
+    height: 66px
+
+.custom
+  color: #fff
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%)
+  align-items: flex-end
+  padding-right: 90px
+  &__icon
+    background: url(../img/stat_cust.png) no-repeat center
+    width: 69px
+    height: 70px
+  &__descr
+    text-align: right
+
+.resources
+  min-height: 865px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: #F5F8FF
+  &__slider
+    display: flex
+    align-items: center
+    margin-bottom: 101px
+  &__p1
+    margin-bottom: 22px
+  &__title
+    font-family: Quicksand500
+    font-size: 24px
+    color: #3D4F9F
+    margin-bottom: 92px
+  &__slide
+    width: 958px
+    height: 394px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #fff
+    &__content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 267px
+      width: 408px
+    &__title
+      font-family: Quicksand
+      color: #3D4F9F
+      font-size: 36px
+    &__p
+      font-family: Roboto
+      font-size: 14px
+      color: #8D96BD
+      height: 116px
+      letter-spacing: 0.03em
+      line-height: 27px
+    &-container
+      overflow: hidden
+      width: 958px
+      height: 394px
+      border: 1px solid #D8E3FE
+      box-shadow: 0px 15px 50px #EFF4FF
+      margin-bottom: 101px
+      margin: 0 75px
+    &-wrapper
+      display: flex
+      transition: 1s all
+  &__btn--read
+    width: 113px
+    height: 43px
+    background-color: #D2E1FF
+    font-family: Quicksand700
+    color: #3A79FF
+    font-size: 13px
+    border-radius: 2px
+  &__btn--add
+    width: 211px
+    height: 43px
+    color: #A6B6DA
+    font-family: Quicksand700
+    font-size: 13px
+    background-color: #fff
+  &__images
+    display: flex
+    flex-direction: column
+    margin-right: 67px
+  &__img--small
+    margin-bottom: 13.74px
+    &:last-child
+      margin-bottom: 0
+  &__img--big
+    margin-right: 12.84px
+
+.arrow
+  width: 27px
+  height: 19px
+  cursor: pointer
+  &--left
+    background: url(../img/arrow_left.svg) no-repeat center 
+  &--right
+    background: url(../img/arrow_right.svg) no-repeat center
+
+.test
+  min-height: 479px
+  display: flex
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%)
+  overflow: hidden
+  align-items: center
+  justify-content: center
+  border-top: 1px solid #D8E3FE
+  border-bottom: 1px solid #D8E3FE
+  &__descr
+    width: 333px
+    margin-right: 132px
+  &__p1
+    font-family: Roboto500
+    font-size: 10px
+    color: #3D4F9F
+    margin-bottom: 33px
+  &__title
+    font-family: Quicksand500
+    font-size: 36px
+    color: #3D4F9F
+    margin-bottom: 17px
+  &__p
+    height: 78.16px
+    font-family: "Open Sans"
+    font-size: 12px
+    font-weight: 600
+    color: #A4ABC8
+    line-height: 23px
+    letter-spacing: 0.03em
+  &__right
+    display: flex
+    flex-direction: column
+    width: 416px
+    justify-content: center
+  &__slide
+    &__container
+      width: 699px
+      height: 207px
+      margin-bottom: 78.16px
+      overflow: hidden
+    &__wrapper
+      display: flex
+      transition: 1s all
+    &__item
+      background-color: #fff
+      box-sizing: border-box
+      padding-top: 41px
+      color: #676F95
+      min-width: 423px
+      height: 175.37px
+      transition: 1s all
+      display: flex
+      position: relative
+      border: 1px solid #D8E3FE
+      box-shadow: 0px 5px 50px #F3F5FA
+      margin-right: 64px
+    &__p
+      margin: 0 auto
+      font-family: Roboto
+      font-size: 14px
+      line-height: 24px
+      letter-spacing: 0.03em
+      width: 284px
+      height: 84px
+    &__img
+      position: absolute
+      bottom: -31px
+      transition: 1s all
+      left: 50%
+      transform: translateX(-50%)
+
+.slide--inactive
+  opacity: 0.5
+  & img
+    height: 0
+
+.arrow
+  width: 13px
+  height: 3px
+  background-color: #8E96B7
+  display: block
+  border-radius: 15px
+  transform: rotate(135deg)
+  transform-origin: center
+
+.faq
+  padding-top: 175px
+  padding-bottom: 175px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &__p1
+    margin-bottom: 22px
+  &__title
+    font-family: Quicksand500
+    font-size: 24px
+    color: #3D4F9F
+    margin-bottom: 53px
+  &__arrow
+    margin: 5px 24px 0 24px
+    &::before
+      @extend .arrow
+      content: ''
+      transform: rotate(90deg) translate(5px, -5px)
+  &__item
+    width: 743px
+    box-sizing: border-box
+    border-bottom: 1px solid #D8E3FE
+    cursor: pointer
+    &__title
+      font-family: Quicksand500
+      color: #8E96B7
+      font-size: 15px
+    &__selector
+      min-height: 77px
+      display: flex
+      align-items: center
+      &--active
+        & h4
+          color: #495274
+          font-family: Quicksand700
+        & span
+          transform: rotate(312deg) translate(-5px, -4px)
+          background-color: #495274
+          &::before
+            background-color: #495274
+    &__content
+      display: flex 
+    &__p
+      font-family: Roboto
+      font-size: 14px
+      color: #8D96BD
+      line-height: 27px
+      letter-spacing: 0.03em
+      width: 391px
+      margin-right: 62px
+      margin-left: 80px
+      margin-bottom: 48px
+    &__btn
+      width: 195px
+      height: 43px
+      background-color: #E8ECF4
+      font-family: Quicksand500
+      font-size: 13px
+      color: #7382A3
+
+.started
+  height: 447px
+  background: url(../img/clouds_started.png), linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%)
+  color: #fff
+  text-align: center
+  display: flex
+  justify-content: center
+  flex-direction: column
+  &__p1
+    font-family: Roboto500
+    font-size: 10px
+    letter-spacing: 0.1em
+    margin-bottom: 20px
+  &__title
+    font-family: Quicksand
+    font-size: 48px
+    margin-bottom: 30px
+    & span
+      font-family: Quicksand500
+  &__p
+    font-family: Roboto
+    font-size: 15px
+    height: 78px
+    margin-bottom: 28px
+    letter-spacing: 0.03em
+  &__btns
+    display: flex
+    justify-content: center
+    margin: 0 auto
+  &__btn
+    min-width: 130.1px
+    height: 43px
+    padding-right: 0 8px
+    text-align: center
+    box-sizing: border-box
+    border: 1px solid #A0B4FF
+    font-family: Quicksand500
+    color: #C7D3FF
+    font-size: 13px
+    background: transparent
+    &:first-child
+      border-radius: 2px 0 0 2px
+    &:last-child
+      border-radius: 0 2px 2px 0
+    &:hover
+      background: #fff
+      color: #565F82
+      font-family: "Quicksand700"
+      font-size: 13px
+      border: none
+
+.sign
+  height: 332px
+  display: flex
+  justify-content: center
+  align-items: center
+  &__descr
+    width: 330px
+    margin-right: 80px
+  &__title
+    font-family: Quicksand700
+    font-size: 18px
+    color: #3D4F9F
+    margin-bottom: 18px
+  &__p
+    font-family: Roboto
+    color: #8D96BD
+    font-size: 14px
+    line-height: 27px
+    letter-spacing: 0.03em
+    width: 330px
+  &__input
+    background: #EFEFF7
+    border: none
+    border-radius: 5px
+    width: 279px
+    height: 59px
+    color: #7A85AD
+    font-family: Quicksand700
+    margin-right: 14px
+    &::placeholder
+      color: #7A85AD
+      font-family: Quicksand700
+      font-size: 13px
+      padding-left: 23px
+  &__btn
+    width: 184px
+    height: 59px
+    background: #4D6CE1
+    box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2)
+    border-radius: 5px
+    color: #fff
+    font-family: Quicksand700
+    font-size: 13px
+.footer
+  height: 287px
+  box-sizing: border-box
+  border-top: 1px solid #D8E3FE
+  align-content: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  &__copyright
+    margin-left: 216px
+    font-family: Quicksand500
+    font-size: 12px
+    letter-spacing: 0.05em
+    color: #AEB8D0
+  &__head
+    margin-bottom: 30px
+
+
+.hide
+  display: none
+  
+/* .triangle
+  margin: 0 auto
+  width: 0
+  height: 0
+  border-top: 5.5px solid transparent
+  border-left: 10px solid #5cb85c
+  border-bottom: 5.5px solid transparent */
